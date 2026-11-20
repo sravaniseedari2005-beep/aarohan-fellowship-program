@@ -1,0 +1,1095 @@
+/* =====================================================
+   AAROHAN BRANCH GALLERY
+===================================================== */
+
+:root {
+
+    --dark: #061c20;
+
+    --dark-green: #092f2b;
+
+    --green: #168044;
+
+    --light-green: #79d691;
+
+    --soft-green: #edf6ef;
+
+    --white: #ffffff;
+
+    --text: #17322c;
+
+    --muted: #71817c;
+
+}
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f8f5;
+
+    color: var(--text);
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    min-height: 78px;
+
+    background: var(--dark);
+
+    box-shadow:
+        0 5px 25px
+        rgba(0,0,0,.15);
+
+}
+
+
+.navbar-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.brand-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: var(--light-green);
+
+    background:
+        rgba(121,214,145,.12);
+
+    font-size: 21px;
+
+}
+
+
+.brand-text strong {
+
+    display: block;
+
+    color: white;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.brand-text small {
+
+    display: block;
+
+    color: #80938d;
+
+    font-size: 9px;
+
+}
+
+
+.nav-link {
+
+    color: #d5e0dc !important;
+
+    margin-left: 14px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    color: var(--light-green) !important;
+
+}
+
+
+.apply-btn {
+
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 10px 22px;
+
+    background: var(--green);
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.apply-btn:hover {
+
+    background: #116b39;
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.gallery-hero {
+
+    padding: 105px 0 90px;
+
+    background:
+
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(80,170,100,.18),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f6faf6,
+            white
+        );
+
+}
+
+
+.hero-label {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.gallery-hero h1 {
+
+    margin-top: 15px;
+
+    font-size:
+        clamp(48px, 7vw, 76px);
+
+    line-height: .95;
+
+    font-weight: 900;
+
+    letter-spacing: -3px;
+
+}
+
+
+.gallery-hero h1 span {
+
+    display: block;
+
+    color: var(--green);
+
+}
+
+
+.gallery-hero p {
+
+    max-width: 680px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+/* =====================================================
+   BRANCH SECTION
+===================================================== */
+
+.branches-section {
+
+    padding: 95px 0;
+
+    background: white;
+
+}
+
+
+.section-heading {
+
+    margin-bottom: 45px;
+
+}
+
+
+.section-heading span {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-heading h2 {
+
+    margin-top: 8px;
+
+    font-size: 43px;
+
+    font-weight: 900;
+
+}
+
+
+.section-heading p {
+
+    max-width: 680px;
+
+    margin-top: 12px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   BRANCH CARD
+===================================================== */
+
+.branch-card {
+
+    overflow: hidden;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: white;
+
+    border: 1px solid #e1e9e2;
+
+    box-shadow:
+        0 12px 35px
+        rgba(5,40,30,.07);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+
+}
+
+
+.branch-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 55px
+        rgba(5,40,30,.15);
+
+}
+
+
+/* =====================================================
+   BRANCH IMAGE
+===================================================== */
+
+.branch-image {
+
+    position: relative;
+
+    height: 270px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+}
+
+
+.branch-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .6s ease;
+
+}
+
+
+.branch-card:hover
+.branch-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+.image-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: white;
+
+    background:
+        rgba(5,35,30,.55);
+
+    opacity: 0;
+
+    transition: .35s;
+
+}
+
+
+.branch-card:hover
+.image-overlay {
+
+    opacity: 1;
+
+}
+
+
+.click-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: var(--green);
+
+    background: white;
+
+    font-size: 20px;
+
+}
+
+
+.image-overlay span {
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   BRANCH CONTENT
+===================================================== */
+
+.branch-content {
+
+    padding: 25px;
+
+}
+
+
+.branch-number {
+
+    color: var(--green);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.branch-content h3 {
+
+    margin-top: 7px;
+
+    font-size: 24px;
+
+    font-weight: 900;
+
+}
+
+
+.location {
+
+    margin-top: 8px;
+
+    color: #70817b;
+
+    font-size: 11px;
+
+}
+
+
+.location i {
+
+    color: var(--green);
+
+    margin-right: 5px;
+
+}
+
+
+.branch-content p {
+
+    margin-top: 13px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+}
+
+
+.view-btn {
+
+    margin-top: 8px;
+
+    padding: 9px 17px;
+
+    border-radius: 7px;
+
+    color: white;
+
+    background: var(--green);
+
+    border: none;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.view-btn:hover {
+
+    color: white;
+
+    background: #116b39;
+
+}
+
+
+/* =====================================================
+   SELECTED GALLERY
+===================================================== */
+
+.selected-gallery {
+
+    padding: 100px 0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #f3f8f3,
+            white
+        );
+
+}
+
+
+.gallery-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.gallery-label {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.gallery-header h2 {
+
+    margin-top: 8px;
+
+    font-size: 45px;
+
+    font-weight: 900;
+
+}
+
+
+.gallery-header h2 span {
+
+    color: var(--green);
+
+}
+
+
+.gallery-header p {
+
+    max-width: 650px;
+
+    margin-top: 12px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+}
+
+
+.back-btn {
+
+    flex-shrink: 0;
+
+    border: 1px solid #cfdcd2;
+
+    border-radius: 8px;
+
+    color: var(--green);
+
+    background: white;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.back-btn:hover {
+
+    color: white;
+
+    background: var(--green);
+
+}
+
+
+.photo-count {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 25px;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    color: var(--green);
+
+    background: var(--soft-green);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   PHOTO CARD
+===================================================== */
+
+.photo-card {
+
+    position: relative;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    background: var(--dark);
+
+    box-shadow:
+        0 12px 35px
+        rgba(5,40,30,.10);
+
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .6s ease;
+
+}
+
+
+.photo-card:hover img {
+
+    transform: scale(1.08);
+
+}
+
+
+.photo-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            transparent 30%,
+            rgba(2,20,20,.92)
+        );
+
+}
+
+
+.photo-overlay span {
+
+    color: var(--light-green);
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.photo-overlay h4 {
+
+    margin-top: 5px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+}
+
+
+.zoom-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: white;
+
+    background:
+        rgba(255,255,255,.15);
+
+    backdrop-filter: blur(8px);
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.photo-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+    background:
+        rgba(2,15,15,.92);
+
+}
+
+
+.modal-box {
+
+    width: min(900px, 100%);
+
+    max-height: 90vh;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #061c20;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.4);
+
+}
+
+
+.modal-box img {
+
+    display: block;
+
+    width: 100%;
+
+    max-height: 70vh;
+
+    object-fit: contain;
+
+    background: #020e0e;
+
+}
+
+
+.modal-info {
+
+    padding: 20px 25px;
+
+}
+
+
+.modal-info span {
+
+    color: var(--light-green);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.modal-info h3 {
+
+    margin-top: 5px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+}
+
+
+.modal-info p {
+
+    margin: 5px 0 0;
+
+    color: #91a69e;
+
+    font-size: 11px;
+
+}
+
+
+.modal-close {
+
+    position: fixed;
+
+    top: 25px;
+
+    right: 30px;
+
+    z-index: 10000;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    color: white;
+
+    background: rgba(255,255,255,.12);
+
+    font-size: 17px;
+
+}
+
+
+.modal-close:hover {
+
+    background: var(--green);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding: 55px 0 20px;
+
+    color: #82938e;
+
+    background: var(--dark);
+
+}
+
+
+.footer-logo {
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+}
+
+
+footer p {
+
+    margin-top: 6px;
+
+    font-size: 10px;
+
+}
+
+
+.footer-links a {
+
+    margin-left: 20px;
+
+    color: #8da09a;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: var(--light-green);
+
+}
+
+
+.copyright {
+
+    margin-top: 35px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.08);
+
+    font-size: 9px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width: 768px) {
+
+    .gallery-hero {
+
+        padding: 75px 0;
+
+    }
+
+
+    .gallery-hero h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .gallery-header {
+
+        display: block;
+
+    }
+
+
+    .back-btn {
+
+        margin-top: 20px;
+
+    }
+
+
+    .gallery-header h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .photo-card {
+
+        height: 260px;
+
+    }
+
+
+    .footer-links {
+
+        margin-top: 20px;
+
+    }
+
+
+    .footer-links a {
+
+        margin-left: 0;
+
+        margin-right: 15px;
+
+    }
+
+}

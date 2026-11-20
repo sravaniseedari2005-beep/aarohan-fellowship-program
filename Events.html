@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aarohan | Events & Activities</title>
+
+    <meta
+        name="description"
+        content="Aarohan Events & Activities showcasing student learning, communication activities, official visits, projects and skill-development experiences at ITDA Paderu.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Events.css">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Vue JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="Aarohon barnch.html" class="logo">
+
+                <div class="logo-icon">
+                    ✦
+                </div>
+
+                <div class="logo-text">
+                    <h3>AAROHAN</h3>
+                    <span>ITDA Paderu</span>
+                </div>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="programs.html">programs</a>
+
+                <a href="Events.html">events&activities</a>
+
+                <a href="about.html">about</a>
+
+
+                <!-- EVENTS NAVIGATION -->
+
+                <div class="events-menu">
+
+                    <a href="#top" class="active">
+                        Events & Activities
+                        <span>⌄</span>
+                    </a>
+
+                    <div class="dropdown">
+
+                        <a href="#gallery">
+                            Gallery
+                        </a>
+
+                        <a href="#communication">
+                            Communication Activities
+                        </a>
+
+                        <a href="#visits">
+                            Official Visits
+                        </a>
+
+                        <a href="#projects">
+                            Student Projects
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#contact">Contact</a>
+
+
+                <a href="index.html" class="apply-btn">
+                    Connect with Aarohan
+                </a>
+
+            </nav>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="mobile-button"
+                type="button"
+                :aria-expanded="mobileMenu.toString()"
+                aria-controls="mobile-navigation"
+                aria-label="Toggle navigation"
+                @click="mobileMenu = !mobileMenu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE NAV -->
+
+        <div
+            id="mobile-navigation"
+            class="mobile-nav"
+            :class="{show: mobileMenu}">
+
+            <a href="#top" @click="closeMobileMenu">Home</a>
+
+            <a href="#overview" @click="closeMobileMenu">About</a>
+
+            <a href="#communication" @click="closeMobileMenu">Training</a>
+
+            <a href="#gallery" @click="closeMobileMenu">Gallery</a>
+
+            <a href="#projects" @click="closeMobileMenu">Projects</a>
+
+            <a href="#contact" @click="closeMobileMenu">Contact</a>
+
+            <a href="#contact" class="apply-btn" @click="closeMobileMenu">
+                Connect with Aarohan
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main id="top">
+
+    <div class="breadcrumb-wrap">
+        <div class="container breadcrumb" aria-label="Breadcrumb">
+            <a href="#top">Home</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Events &amp; Activities</span>
+        </div>
+    </div>
+
+    <section class="hero">
+
+        <div class="hero-background"></div>
+
+        <div class="container hero-container">
+
+
+            <!-- LEFT -->
+
+            <div class="hero-content">
+
+                <span class="small-title">
+                    AAROHAN • EVENTS & ACTIVITIES
+                </span>
+
+
+                <h1>
+
+                    Learn.
+                    Interact.
+
+                    <span>
+                        Build. Grow.
+                    </span>
+
+                </h1>
+
+
+                <p>
+
+                    Discover the learning experiences,
+                    communication activities, expert
+                    interactions, official visits and
+                    innovative projects that make the
+                    Aarohan journey meaningful.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#gallery"
+                        class="primary-button">
+
+                        Explore Activities
+
+                        <span>→</span>
+
+                    </a>
+
+
+                    <a
+                        href="#gallery"
+                        class="secondary-button">
+
+                        View Gallery
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT CARD -->
+
+            <div class="hero-card">
+
+                <div class="circle-decoration"></div>
+
+                <div class="hero-symbol">
+                    ✦
+                </div>
+
+
+                <span class="card-label">
+                    AAROHAN EXPERIENCE
+                </span>
+
+
+                <h2>
+                    Beyond the Classroom
+                </h2>
+
+
+                <p>
+
+                    Practical learning,
+                    confident communication,
+                    meaningful interactions and
+                    real-world digital skills.
+
+                </p>
+
+
+                <div class="hero-mini">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Learn</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Interact</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Build</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Grow</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="overview" id="overview">
+        <div class="container">
+            <div class="section-heading compact-heading">
+                <div>
+                    <span class="small-title">AAROHAN EXPERIENCE</span>
+                    <h2>Learning that becomes <span>confidence.</span></h2>
+                </div>
+                <p>Every activity connects practical skills with communication, collaboration and the confidence to take the next step.</p>
+            </div>
+
+            <div class="overview-grid">
+                <article class="overview-card"><span>01</span><i class="bi bi-lightbulb"></i><h3>Learn</h3><p>Build practical technical and professional skills.</p></article>
+                <article class="overview-card"><span>02</span><i class="bi bi-chat-heart"></i><h3>Interact</h3><p>Communicate, collaborate and learn from experts.</p></article>
+                <article class="overview-card"><span>03</span><i class="bi bi-tools"></i><h3>Build</h3><p>Create practical projects and demonstrate skills.</p></article>
+                <article class="overview-card"><span>04</span><i class="bi bi-graph-up-arrow"></i><h3>Grow</h3><p>Develop confidence, professionalism and career readiness.</p></article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+
+            <div class="stat">
+
+                <div class="stat-icon">
+                    ◉
+                </div>
+
+                <div>
+                    <strong>
+                        Branch Visits
+                    </strong>
+
+                    <span>
+                        Learning across different locations
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon">
+                    ◌
+                </div>
+
+                <div>
+                    <strong>
+                        Communication
+                    </strong>
+
+                    <span>
+                        Practice & confidence
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon">
+                    ◆
+                </div>
+
+                <div>
+                    <strong>
+                        Expert Interaction
+                    </strong>
+
+                    <span>
+                        Meet, ask and learn
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon">
+                    ⌁
+                </div>
+
+                <div>
+                    <strong>
+                        Student Projects
+                    </strong>
+
+                    <span>
+                        Build & demonstrate
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section upcoming" id="upcoming">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="small-title">00 • UPCOMING EVENTS</span>
+                    <h2>What is happening <span>next?</span></h2>
+                </div>
+                <p>Stay connected with the latest learning experiences, activities and opportunities at Aarohan.</p>
+            </div>
+
+            <div v-if="hasUpcomingEvents" class="event-grid">
+                <article v-for="event in upcomingEvents" :key="event.title" class="event-card">
+                    <span class="event-status">{{ event.status }}</span>
+                    <strong>{{ event.date }}</strong>
+                    <small>{{ event.category }}</small>
+                    <h3>{{ event.title }}</h3>
+                    <p>{{ event.description }}</p>
+                    <span class="event-meta"><i class="bi bi-geo-alt"></i>{{ event.location }}</span>
+                </article>
+            </div>
+
+            <div v-else class="empty-state">
+                <i class="bi bi-calendar2-check" aria-hidden="true"></i>
+                <div>
+                    <h3>No upcoming events at the moment.</h3>
+                    <p>Check back soon for new Aarohan activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section
+        class="section gallery-section"
+        id="gallery">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="small-title">
+                        01 • AAROHAN GALLERY
+                    </span>
+
+                    <h2>
+                        Moments from
+                        <span>Every Branch</span>
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Explore photographs from Aarohan
+                    branches, classrooms, teaching sessions,
+                    activities and special events.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- FILTER -->
+
+            <div class="gallery-filter">
+
+                <button
+                    v-for="filter in filters"
+                    :key="filter"
+
+                    @click="activeFilter = filter"
+
+                    :class="{
+                        selected: activeFilter === filter
+                    }">
+
+                    {{ filter }}
+
+                </button>
+
+            </div>
+
+
+
+            <!-- GALLERY -->
+
+            <div class="gallery-grid">
+
+
+                <a
+                    v-for="photo in filteredPhotos"
+                    :key="photo.id"
+
+                    class="gallery-item"
+
+                    :href="photo.galleryPage"
+                    @click.prevent="openPhoto(photo)">
+
+
+                    <img
+                        v-if="photo.image"
+                        :src="photo.image"
+                        :alt="photo.alt"
+                        loading="lazy"
+                        @error="handleImageError">
+
+                    <div v-else class="image-placeholder" role="img" :aria-label="photo.title + ' photo pending'">
+                        <i class="bi bi-image" aria-hidden="true"></i>
+                        <span>Photo pending</span>
+                    </div>
+
+
+                    <div class="gallery-overlay">
+
+                        <span>
+                            {{ photo.category }}
+                        </span>
+
+                        <h3>
+                            {{ photo.title }}
+                        </h3>
+
+                        <small>
+                            {{ photo.location }}
+                        </small>
+
+                        <b>View Photo <i class="bi bi-arrow-up-right" aria-hidden="true"></i></b>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <a class="gallery-more" href="branch-campus-gallery.html">View Full Gallery <i class="bi bi-arrow-right"></i></a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= COMMUNICATION ================= -->
+
+    <section
+        class="section communication"
+        id="communication">
+
+        <div class="container">
+
+
+            <div class="center-heading">
+
+                <span class="small-title">
+                    02 • COMMUNICATION ACTIVITIES
+                </span>
+
+                <h2>
+
+                    Building
+
+                    <span>
+                        Confidence & Communication
+                    </span>
+
+                </h2>
+
+                <p>
+
+                    Regular communication activities
+                    help students improve confidence,
+                    fluency, vocabulary and professional
+                    communication.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="activity-grid">
+
+
+                <article
+                    v-for="(activity,index) in activities"
+                    :key="activity.title"
+
+                    class="activity-card">
+
+
+                    <span class="activity-number">
+                        0{{ index + 1 }}
+                    </span>
+
+
+                    <div class="activity-icon">
+                        <i :class="['bi', activity.icon]" aria-hidden="true"></i>
+                    </div>
+
+
+                    <h3>
+                        {{ activity.title }}
+                    </h3>
+
+
+                    <p>
+                        {{ activity.description }}
+                    </p>
+
+
+                    <div class="activity-line"></div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= OFFICIAL VISITS ================= -->
+
+    <section
+        class="section visits"
+        id="visits">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="small-title">
+                        03 • OFFICIAL VISITS
+                    </span>
+
+                    <h2>
+
+                        Learning from
+
+                        <span>
+                            Leaders & Experts
+                        </span>
+
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Students get opportunities to
+                    interact with officials, experts
+                    and teams and understand how
+                    their learning connects to the
+                    real world.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="visit-grid">
+
+
+                <article
+                    v-for="visit in visits"
+                    :key="visit.title"
+
+                    class="visit-card">
+
+
+                    <div class="visit-image">
+
+                        <img
+                            v-if="visit.image"
+                            :src="visit.image"
+                            :alt="visit.alt"
+                            loading="lazy"
+                            @error="handleImageError">
+
+                        <div v-else class="image-placeholder" role="img" :aria-label="visit.title + ' photo pending'">
+                            <i class="bi bi-image" aria-hidden="true"></i>
+                            <span>Photo pending</span>
+                        </div>
+
+                        <span>
+                            {{ visit.number }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="visit-content">
+
+                        <small>
+                            {{ visit.label }}
+                        </small>
+
+                        <h3>
+                            {{ visit.title }}
+                        </h3>
+
+
+                        <p>
+                            {{ visit.description }}
+                        </p>
+
+                        <a class="visit-link" :href="visit.galleryPage">View Photos <i class="bi bi-arrow-right"></i></a>
+
+
+                        <ul>
+
+                            <li
+                                v-for="point in visit.points"
+                                :key="point">
+
+                                <span>✓</span>
+
+                                {{ point }}
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= STUDENT PROJECTS ================= -->
+
+    <section
+        class="section projects"
+        id="projects">
+
+        <div class="container project-layout">
+
+
+            <div class="project-content">
+
+                <span class="small-title">
+                    04 • STUDENT INNOVATION
+                </span>
+
+
+                <h2>
+
+                    Students
+
+                    <span>
+                        Build & Demonstrate
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Aarohan students apply their
+                    digital skills by building websites
+                    and presenting their work to others.
+
+                </p>
+
+
+                <div class="project-points">
+
+
+                    <div>
+
+                        <span>01</span>
+
+                        <p>
+
+                            <strong>Build</strong><br>
+
+                            Students create useful websites
+                            and digital projects.
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>02</span>
+
+                        <p>
+
+                            <strong>Present</strong><br>
+
+                            Students explain their ideas,
+                            features and technology.
+
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>03</span>
+
+                        <p>
+
+                            <strong>Receive Feedback</strong><br>
+
+                            Students learn through questions,
+                            suggestions and interaction.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROJECT VISUAL -->
+
+            <div class="project-window">
+
+                <div v-if="!projects.length" class="project-data-note">
+                    <i class="bi bi-folder2-open" aria-hidden="true"></i>
+                    <div>
+                        <strong>Student project showcase</strong>
+                        <span>Verified project images and titles will appear here when available.</span>
+                    </div>
+                </div>
+
+                <div v-else class="project-card-grid">
+                    <article v-for="project in projects" :key="project.title" class="project-card">
+                        <img :src="project.image" :alt="project.title" loading="lazy" @error="handleImageError">
+                        <span>{{ project.category }}</span>
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.description }}</p>
+                        <small>{{ project.team }}</small>
+                    </article>
+                </div>
+
+                <div class="browser-top">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <small>
+                        aarohan-student-project
+                    </small>
+
+                </div>
+
+
+                <div class="browser-body">
+
+                    <aside>
+
+                        <strong>
+                            A
+                        </strong>
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </aside>
+
+
+                    <main>
+
+                        <span class="demo-label">
+                            STUDENT WEB DEMO
+                        </span>
+
+                        <h3>
+                            My Digital Project
+                        </h3>
+
+                        <p>
+                            Design • Development • Presentation
+                        </p>
+
+
+                        <div class="demo-bars">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="demo-boxes">
+
+                            <div></div>
+
+                            <div></div>
+
+                        </div>
+
+                    </main>
+
+                </div>
+
+
+                <div class="project-caption">
+
+                    <span>
+                        Student Project Showcase
+                    </span>
+
+                    <strong>
+                        Project showcase content pending →
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="section gains" id="gains">
+        <div class="container">
+            <div class="center-heading">
+                <span class="small-title">THE OUTCOME</span>
+                <h2>What students <span>gain.</span></h2>
+                <p>The Aarohan experience supports the skills and habits students carry into future learning and work.</p>
+            </div>
+
+            <div class="gains-grid">
+                <article v-for="gain in gains" :key="gain.title" class="gain-card">
+                    <i :class="['bi', gain.icon]" aria-hidden="true"></i>
+                    <h3>{{ gain.title }}</h3>
+                    <p>{{ gain.description }}</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FINAL CTA ================= -->
+
+    <section class="final-cta">
+
+        <div class="container cta-container">
+
+
+            <div>
+
+                <span class="small-title">
+                    THE AAROHAN JOURNEY
+                </span>
+
+
+                <h2>
+
+                    Every activity is a step
+                    <span>
+                        towards growth.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    From the classroom to real-world
+                    interaction, Aarohan creates
+                    opportunities to learn, practice
+                    and grow.
+
+                </p>
+
+            </div>
+
+
+            <a
+                href="#gallery"
+                class="cta-button">
+
+                Explore All Moments →
+
+            </a>
+
+        </div>
+
+    </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div class="footer-brand">
+
+                <a href="#top" class="logo">
+
+                    <div class="logo-icon">
+                        ✦
+                    </div>
+
+                    <div class="logo-text">
+
+                        <h3>
+                            AAROHAN
+                        </h3>
+
+                        <span>
+                            ITDA Paderu
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+
+                    AI & Digital Skills Fellowship
+                    for an aspiring, skilled and
+                    confident future.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <a href="#top">
+                    Home
+                </a>
+
+                <a href="#upcoming">Upcoming Events</a>
+
+                <a href="#gallery">Gallery</a>
+
+                <a href="#communication">
+                    Activities
+                </a>
+
+                <a href="#visits">
+                    Visits
+                </a>
+
+                <a href="#projects">Student Projects</a>
+
+                <a href="#gains">What Students Gain</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <span>
+                    © 2026 Aarohan • ITDA Paderu
+                </span>
+
+                <span>
+                    Learn • Build • Innovate • Grow
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= PHOTO MODAL ================= -->
+
+    <div
+        v-if="selectedPhoto"
+        class="photo-modal"
+        @click.self="closePhoto">
+
+
+        <div class="modal-box" role="dialog" aria-modal="true" :aria-label="selectedPhoto ? selectedPhoto.title : 'Photo viewer'">
+
+
+            <button
+                class="close-modal"
+                @click="closePhoto"
+                aria-label="Close photo viewer">
+
+                ×
+
+            </button>
+
+
+            <button class="lightbox-control lightbox-prev" type="button" @click="previousPhoto" aria-label="Previous photo">
+                <i class="bi bi-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <img
+                v-if="selectedPhoto.image"
+                :src="selectedPhoto.image"
+                :alt="selectedPhoto.alt"
+                @error="handleImageError">
+
+            <div v-else class="image-placeholder lightbox-placeholder" role="img" :aria-label="selectedPhoto.title + ' photo pending'">
+                <i class="bi bi-image" aria-hidden="true"></i>
+                <span>Photo pending</span>
+            </div>
+
+            <button class="lightbox-control lightbox-next" type="button" @click="nextPhoto" aria-label="Next photo">
+                <i class="bi bi-chevron-right" aria-hidden="true"></i>
+            </button>
+
+
+            <div class="modal-info">
+
+                <span>
+                    {{ selectedPhoto.category }}
+                </span>
+
+                <h3>
+                    {{ selectedPhoto.title }}
+                </h3>
+
+                <p>
+                    {{ selectedPhoto.location }}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button
+        id="backToTop"
+        class="btn btn-success back-to-top"
+        type="button"
+        aria-label="Back to top"
+        title="Back to top"
+        @click="scrollToTop">
+
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+
+    </button>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="event.js"></script>
+
+</body>
+</html>
